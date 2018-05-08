@@ -12,7 +12,7 @@ if id -u ${username}
 then
         echo "user ${usrename} already exist, do not add"
 else
-        adduser --disabled-password --gecos "" ${username}
+        adduser --shell /bin/bash --disabled-password --gecos "" ${username}
 fi
 
 group="sudo"
